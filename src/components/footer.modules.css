@@ -1,0 +1,62 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  bottom: 0;
+  background-color: rgb(34, 41, 41);
+  color: white;
+  border-top: 2.5px solid gainsboro;
+  /* padding: 10px; */
+  box-sizing: border-box;
+}
+
+.footer-inner-position {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+}
+
+.links {
+  margin: 10px;
+}
+
+.home-link, a, a:visited {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+  margin: 10px;
+}
+
+.social-media-link-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logos-container, .app-store-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 30px;
+}
+
+.app-store {
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    height: 5vmin;
+  }
+
+  .app-store {
+    width: 15vmin
+  }
+}

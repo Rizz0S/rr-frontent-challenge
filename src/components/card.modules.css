@@ -1,0 +1,42 @@
+.card {
+  width: 150px;
+  border: 1px solid darkslategrey;
+  box-shadow: 3px 4px 0 0 thistle;
+  display: inline-block;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-title {
+  width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px;
+  border-top: 1px dashed darkslategrey;
+}
+
+.img-overlay-wrapper {
+  position: relative;
+  background: linear-gradient(rgb(242, 228, 242), white);
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  text-align: center;
+  justify-self: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+}
